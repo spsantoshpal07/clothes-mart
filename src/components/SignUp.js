@@ -38,7 +38,7 @@ class SignUp extends React.Component {
                 confirmPassword: ''
             });
         } catch(error) {
-            console.error(error);
+            alert('This email id is already registered.\nPlease Sign In using this email id or create account using another email id.');
         }
     }
 
