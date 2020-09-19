@@ -4,13 +4,13 @@ import ListShopItems from '../components/ListShopItems';
 
 import '../css/ShopItems.scss';
 
-const ShopItems = ({ id, title, items, routeName }) => {
+const ShopItems = ({ title, items, routeName }) => {
     return (
         <div className='collection-preview'>
             <h1 className='title'>{title.toUpperCase()}</h1>
             <div className='preview'>
                 { items.filter((item, index) => index<4)
-                    .map(({id, ...otherShopItemList}) => <ListShopItems key={id} { ...otherShopItemList }/>)}
+                    .map( item => <ListShopItems key={item.id} item={item} />)}
             </div>
         </div>
     )

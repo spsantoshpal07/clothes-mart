@@ -40,7 +40,7 @@ const Header = ({ currentUser, hidden }) => {
 const mapStateToProps = state => {
     return {
         currentUser: state.user.currentUser,
-        hidden: state.cart.hidden
+        hidden: state.viewCart.hidden
     }
 }
 
