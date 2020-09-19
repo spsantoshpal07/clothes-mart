@@ -9,7 +9,7 @@ import SignInAndRegister from './pages/SignInAndRegisterPage';
 
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { connect } from 'react-redux';
-import { setCurrentUser } from './reducer/user/user-action';
+import { setCurrentUser } from './redux/user/user-action';
 
 class App extends React.Component {
   unsubscribeFromAuth = null;
