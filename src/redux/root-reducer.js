@@ -7,5 +7,5 @@ import cartItemsReducer from './cart/cartItems-reducer';
 export default combineReducers({
     user: userReducer,
     viewCart: viewCartReducer,
-    itemsInCart: cartItemsReducer
+    itemsInCart: cartItemsReducer,
 })
