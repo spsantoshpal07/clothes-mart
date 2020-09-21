@@ -1,5 +1,7 @@
 import { checkDuplicateItemsInCart } from './cart-utility';
 
+
+//Reducer-------------------->
 const INITIAL_CART_ITEM_STATE = {
     cartItems: []
 };
